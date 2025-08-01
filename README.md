@@ -1,2 +1,2 @@
-akses ke dalam folder 
-Samuel Rinaldy
+akses ke dalam folder. 
+pemilik: Samuel Rinaldy
