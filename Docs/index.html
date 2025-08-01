@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="./asset/logo.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile perusahaan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div id="logo">
+        <img src="./asset/logo.png" alt="Logo">Advanture Guild
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Our Profile</a></li>
+      <li><a href="portofolio.html">Portfolio</a></li>
+      <li><a href="#message">Message Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome">
+    <h1 id="welcomeText">Hi [Name], selamat datang di Teyvat Guild!</h1>
+    <p>ini adalah guild petualang yang hadir di seluruh wilayah Teyvat</p>
+    <div class="banner"></div>
+  </section>
+
+  <!-- Headquarter Section -->
+  <section id="headquarter">
+    <h2>Kantor Pusat Adventure Guild</h2>
+
+    <div class="carousel-container">
+      <!-- Tombol panah -->
+      <button class="carousel-btn prev">&#8592;</button>
+      <button class="carousel-btn next">&#8594;</button>
+
+      <!-- Track slide -->
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <img src="./asset/Mondstadt.png" alt="Mondstadt">
+          <p>Mondstadt</p>
+        </div>
+        <div class="carousel-item">
+          <img src="./asset/Liyue.png" alt="Liyue">
+          <p>Liyue</p>
+        </div>
+        <div class="carousel-item">
+          <img src="./asset/Inazuma.png" alt="Inazuma">
+          <p>Inazuma</p>
+        </div>
+        <div class="carousel-item">
+          <img src="./asset/Sumeru.png" alt="Sumeru">
+          <p>Sumeru</p>
+        </div>
+        <div class="carousel-item">
+          <img src="./asset/Fontaine.png" alt="Fontaine">
+          <p>Fontaine</p>
+        </div>
+        <div class="carousel-item">
+          <img src="./asset/Natlan.png" alt="Natlan">
+          <p>Natlan</p>
+        </div>
+      </div>
+
+      <!-- Dots -->
+      <div class="carousel-dots"></div>
+    </div>
+  </section>
+
+
+  <!-- Message Form -->
+  <div class="message-container">
+  <form class="form-left" onsubmit="return validateForm();">
+    <h2>Message Us</h2>
+    <div class="form-group">
+      <label class="label">Nama</label>
+      <span class="colon">:</span>
+      <input type="text" id="name" placeholder="Nama" />
+    </div>
+    <div class="form-group">
+      <label class="label">Tanggal Lahir</label>
+      <span class="colon">:</span>
+      <input type="date" id="birthDate" />
+    </div>
+    <div class="form-group">
+      <label class="label">Jenis Kelamin</label>
+      <span class="colon">:</span>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="Laki - Laki" /> Laki-Laki</label>
+        <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="label">Pesan</label>
+      <span class="colon">:</span>
+      <textarea id="messageText" placeholder="Pesan"></textarea>
+    </div>
+    <button class="submit-btn" type="submit">Submit</button>
+  </form>
+
+  <div class="result-right" id="resultBox">
+    <!-- Hasil submit tampil di sini -->
+  </div>
+</div>
+
+<p id="timeBox"></p>
+
+
+  <footer>
+    <p> &copy; Dibuat oleh Samuel Rinaldy. Terinspirasi dari game Genshin Impact.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
